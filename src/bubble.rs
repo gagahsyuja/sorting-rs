@@ -1,4 +1,4 @@
-pub fn bubble(vec: &mut Vec<i32>)
+pub fn bubble_sort<T>(vec: &mut Vec<T>) where T: PartialOrd + Copy
 {
     for i in 0..vec.len() - 1
     {
